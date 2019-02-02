@@ -5,9 +5,9 @@ var tbody = d3.select("tbody");
     
 
     tbody.html("")
-    data.forEach((sighting) => {
+    data.forEach((inputv) => {
         var row = tbody.append("tr");
-        Object.entries(sighting).forEach(([key, value]) => {
+        Object.entries(inputv).forEach(([key, value]) => {
           var cell = tbody.append("td");
           cell.text(value);
         });
